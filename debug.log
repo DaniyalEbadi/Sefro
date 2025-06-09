@@ -1,0 +1,696 @@
+INFO 2025-04-13 23:25:22,059 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-13 23:25:24,735 log Not Found: /
+WARNING 2025-04-13 23:25:24,742 basehttp "GET / HTTP/1.1" 404 179
+INFO 2025-04-13 23:28:00,449 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-13 23:28:02,306 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 18:13:28,318 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 18:13:34,062 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-14 18:13:34,114 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+WARNING 2025-04-14 18:13:34,168 log Not Found: /static/css/swagger-ui-animations.css
+WARNING 2025-04-14 18:13:34,169 log Not Found: /static/js/swagger-ui-effects.js
+WARNING 2025-04-14 18:13:34,169 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 404 179
+WARNING 2025-04-14 18:13:34,170 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 404 179
+WARNING 2025-04-14 18:13:34,183 log Not Found: /static/js/swagger-ui-effects.js
+WARNING 2025-04-14 18:13:34,184 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 404 179
+INFO 2025-04-14 18:13:40,736 basehttp "GET /api/schema/ HTTP/1.1" 200 171078
+INFO 2025-04-14 18:31:51,861 autoreload C:\Users\Danial\Desktop\Sefr\api\serializers.py changed, reloading.
+INFO 2025-04-14 18:31:52,865 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 18:32:10,347 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-14 18:32:11,345 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 18:33:02,132 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+WARNING 2025-04-14 18:33:02,172 log Not Found: /static/css/swagger-ui-animations.css
+WARNING 2025-04-14 18:33:02,174 log Not Found: /static/js/swagger-ui-effects.js
+WARNING 2025-04-14 18:33:02,174 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 404 179
+WARNING 2025-04-14 18:33:02,177 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 404 179
+WARNING 2025-04-14 18:33:02,194 log Not Found: /static/js/swagger-ui-effects.js
+WARNING 2025-04-14 18:33:02,200 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 404 179
+INFO 2025-04-14 18:33:03,085 basehttp "GET /api/schema/ HTTP/1.1" 200 171610
+INFO 2025-04-14 18:34:26,382 utils Verification email sent to danimeni2017@gmail.com with code 066827, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 18:34:26,409 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1025
+INFO 2025-04-14 18:40:03,378 utils Verification email sent to danimeni2017@gmail.com with code 948835, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 18:40:03,380 basehttp "POST /api/auth/resend-verification/ HTTP/1.1" 200 196
+INFO 2025-04-14 18:41:49,158 utils Verification email sent to danimeni2017@gmail.com with code 567781, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 18:44:49,694 utils Verification email sent to rasaknifehand@gmail.com with code 898399, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 18:44:49,703 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1024
+INFO 2025-04-14 18:50:23,513 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-14 18:50:24,814 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 18:50:40,042 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-14 18:50:41,023 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:07:12,898 utils Verification email sent to rasaknifehand@gmail.com with code 588877, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 19:07:12,918 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1024
+INFO 2025-04-14 19:26:22,034 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:26:23,122 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:26:44,976 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:26:45,953 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:27:00,316 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-14 19:27:01,364 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:27:35,267 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-14 19:27:36,420 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:27:58,280 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-14 19:27:59,246 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:36:44,855 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+WARNING 2025-04-14 19:36:44,896 log Not Found: /static/css/swagger-ui-animations.css
+WARNING 2025-04-14 19:36:44,897 log Not Found: /static/js/swagger-ui-effects.js
+WARNING 2025-04-14 19:36:44,904 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 404 179
+WARNING 2025-04-14 19:36:44,906 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 404 179
+INFO 2025-04-14 19:36:45,974 basehttp "GET /api/schema/ HTTP/1.1" 200 177126
+ERROR 2025-04-14 19:38:01,267 utils Error sending verification email to danimeni2017@gmail.com: (535, b'ERR_NON_2XX_3XX_RESPONSE - Forbidden - Authentication failed: Invalid username or password.')
+INFO 2025-04-14 19:38:01,293 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1130
+INFO 2025-04-14 19:42:01,740 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:42:03,118 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:42:53,519 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-14 19:42:54,496 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:44:09,220 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:44:17,797 basehttp "POST /api/auth/debug/get-code/ HTTP/1.1" 200 135
+INFO 2025-04-14 19:44:47,795 basehttp "POST /api/auth/verify-email/ HTTP/1.1" 200 839
+INFO 2025-04-14 19:46:08,688 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-14 19:46:09,208 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-14 19:46:09,209 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 200 2849
+INFO 2025-04-14 19:46:10,004 basehttp "GET /api/schema/ HTTP/1.1" 200 177126
+WARNING 2025-04-14 19:46:22,667 log Bad Request: /api/auth/register/
+WARNING 2025-04-14 19:46:22,667 basehttp "POST /api/auth/register/ HTTP/1.1" 400 50
+ERROR 2025-04-14 19:46:46,460 utils Error sending verification email to danimeni2017@gmail.com: (535, b'ERR_NON_2XX_3XX_RESPONSE - Forbidden - Authentication failed: Invalid username or password.')
+INFO 2025-04-14 19:46:46,462 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1130
+INFO 2025-04-14 19:49:15,450 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:49:15,703 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:49:16,925 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:49:17,164 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:50:23,767 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:50:26,810 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:50:48,565 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:50:51,481 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:52:03,128 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-14 19:52:05,050 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-14 19:52:40,389 utils Error sending email via Liara API to ['danimeni2017@gmail.com']: 404 Client Error: Not Found for url: https://mail-service.iran.liara.ir/hopeful_zhukovsky_9daqpv/messages
+INFO 2025-04-14 19:53:16,515 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:53:17,759 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:53:32,324 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:53:33,315 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:53:58,646 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:54:00,464 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:54:23,421 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:54:25,203 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-14 19:55:01,068 utils Error sending email via Liara API to ['danimeni2017@gmail.com']: 404 Client Error: Not Found for url: https://api.iran.liara.ir/v1/mail/servers/hopeful_zhukovsky_9daqpv/messages
+INFO 2025-04-14 19:56:59,125 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:57:00,867 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:57:23,780 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-14 19:57:24,772 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:57:45,631 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-14 19:57:46,755 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 19:58:12,278 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-14 19:58:13,292 autoreload Watching for file changes with StatReloader
+INFO 2025-04-14 20:00:50,612 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-14 20:00:52,592 basehttp "GET /api/schema/ HTTP/1.1" 200 177135
+INFO 2025-04-14 20:01:05,860 utils Verification email sent to danimeni2017@gmail.com with code 034489, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 20:01:07,358 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1025
+ERROR 2025-04-14 20:15:01,310 log Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "E:\installation_python\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "api_user_username_key"
+DETAIL:  Key (username)=(Danimeni) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\installation_python\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\installation_python\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\installation_python\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Danial\Desktop\Sefr\api\views.py", line 468, in register_view
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Danial\Desktop\Sefr\api\serializers.py", line 40, in create
+    user = User.objects.create_user(**validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Danial\Desktop\Sefr\api\models.py", line 22, in create_user
+    user.save(using=self._db)
+  File "C:\Users\Danial\Desktop\Sefr\api\models.py", line 53, in save
+    super().save(*args, **kwargs)
+  File "E:\installation_python\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "E:\installation_python\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "E:\installation_python\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\installation_python\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\installation_python\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\installation_python\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "api_user_username_key"
+DETAIL:  Key (username)=(Danimeni) already exists.
+
+ERROR 2025-04-14 20:15:01,334 basehttp "POST /api/auth/register/ HTTP/1.1" 500 26515
+INFO 2025-04-14 20:15:28,314 utils Verification email sent to rasaknifehand@gmail.com with code 841418, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-14 20:15:28,318 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1027
+INFO 2025-04-15 22:38:46,263 utils Verification email sent to danialebadi533@gmail.com with code 802871, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-15 22:38:46,276 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1029
+INFO 2025-04-15 22:44:37,045 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-15 22:44:44,144 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 22:45:09,560 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-15 22:45:10,995 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 22:47:02,784 utils Verification email sent to danialebadi533@gmail.com with code 057773, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-15 22:47:04,253 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1029
+INFO 2025-04-15 22:53:57,300 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-15 22:53:58,802 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 22:54:28,827 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-15 22:54:30,139 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 23:01:09,735 utils Verification email sent to danialebadi533@gmail.com with code 516282, result: 1, from: Sefr API <info@sefro.ir>, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-15 23:01:09,822 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1029
+INFO 2025-04-15 23:31:04,344 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-15 23:31:06,270 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 23:31:26,238 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-15 23:31:28,376 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 23:32:00,330 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-15 23:32:03,404 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 23:32:33,406 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-15 23:32:36,282 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 23:32:57,133 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-15 23:33:00,202 autoreload Watching for file changes with StatReloader
+INFO 2025-04-15 23:34:19,579 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-15 23:34:19,675 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 09:33:48,644 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 09:33:48,648 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 10:24:39,851 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 10:24:39,857 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 10:55:57,820 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 10:55:57,823 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 11:04:57,436 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 11:04:57,439 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 11:08:33,673 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 11:08:33,678 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 11:30:10,170 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 11:30:10,172 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 11:34:31,368 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-16 11:34:34,464 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 11:35:01,205 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 11:35:02,440 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 11:36:51,001 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 11:36:51,004 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 15:38:24,123 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-16 15:38:24,226 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 304 0
+INFO 2025-04-16 15:38:24,226 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 304 0
+INFO 2025-04-16 15:38:26,677 basehttp "GET /api/schema/ HTTP/1.1" 200 178758
+WARNING 2025-04-16 15:38:42,038 log Bad Request: /api/auth/register/
+WARNING 2025-04-16 15:38:42,038 basehttp "POST /api/auth/register/ HTTP/1.1" 400 50
+INFO 2025-04-16 15:38:55,420 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 15:38:55,423 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 15:40:28,024 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 15:40:28,027 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 15:42:45,649 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 15:42:48,197 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 15:43:24,729 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-16 15:43:25,926 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 15:43:47,400 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 15:43:48,452 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:33:27,929 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 17:33:29,364 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:34:01,525 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 17:34:02,871 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:34:39,266 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-16 17:34:40,511 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:35:21,387 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 17:35:22,764 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:35:48,273 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 17:35:49,373 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:38:43,767 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 17:38:44,924 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:39:12,370 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 17:39:13,617 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:39:51,851 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-16 17:39:52,913 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:40:54,070 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:45:06,349 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 17:45:06,381 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 17:45:07,965 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:45:08,009 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:47:42,163 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 17:47:42,259 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 17:47:44,697 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:47:44,767 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:49:38,256 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 17:50:36,826 views Verification email sending skipped for danialebadi533@gmail.com (EMAIL_DELIVERY_CHECK=False)
+INFO 2025-04-16 17:50:38,304 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1106
+INFO 2025-04-16 18:05:36,073 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:05:36,325 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:05:36,864 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:05:38,021 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:05:38,109 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:05:39,102 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:06:44,834 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 18:06:44,874 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 18:06:45,824 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 18:06:48,017 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:06:48,030 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:06:48,739 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:07:16,109 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-16 18:07:16,177 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-16 18:07:16,248 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email.py changed, reloading.
+INFO 2025-04-16 18:07:17,880 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:07:17,931 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:07:18,038 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:08:27,897 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:08:27,956 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:08:28,368 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:08:29,770 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:08:29,857 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:08:30,291 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:09:10,186 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:09:10,391 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:09:10,437 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:09:12,173 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:09:12,332 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:09:12,349 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-16 18:11:23,069 utils Error sending verification email to danialebadi533@gmail.com: (450, b'ERR_NON_2XX_3XX_RESPONSE - The mail server domain (c1.liara.email) does not exist. Please check your mail server details or refer to the documentation: https://docs.liara.ir/email/create-mail-server - Failed to send mail')
+INFO 2025-04-16 18:11:23,182 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 18:19:16,016 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:19:16,283 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:19:16,356 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:19:19,193 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:19:19,235 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:19:19,374 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:19:45,153 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:19:45,295 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:19:45,369 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:19:46,915 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:19:46,979 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:19:47,022 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:23:24,814 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 18:23:25,198 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 18:23:25,296 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 18:23:26,256 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:23:26,849 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:23:27,009 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:24:01,841 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:24:02,012 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:24:02,118 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:24:03,826 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:24:03,978 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:24:04,263 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:24:06,397 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-16 18:24:08,567 basehttp "GET /api/schema/ HTTP/1.1" 200 184201
+INFO 2025-04-16 18:24:51,394 utils Verification email sent to danialebadi533@gmail.com with code 809714, result: 1, from: info@sefro.ir, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-16 18:24:51,511 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 18:36:13,662 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-16 18:36:14,989 basehttp "GET /api/schema/ HTTP/1.1" 200 184201
+INFO 2025-04-16 18:36:30,732 utils Verification email sent to danialebadi533@gmail.com with code 899789, result: 1, from: info@sefro.ir, host: smtp.c1.liara.email, port: 465
+INFO 2025-04-16 18:36:30,736 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 18:41:21,383 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 18:41:21,999 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 18:41:22,156 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 18:41:23,233 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:41:24,009 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:41:24,171 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:45:55,740 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:45:56,508 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:45:56,685 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:45:57,384 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:45:58,390 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:45:58,496 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-16 18:46:06,627 exception Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "E:\installation_python\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "E:\installation_python\Lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+INFO 2025-04-16 18:46:32,159 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:46:32,342 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:46:32,552 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:46:34,097 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:46:34,120 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:46:34,408 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:50:27,850 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-16 18:50:30,818 basehttp "GET /api/schema/ HTTP/1.1" 200 184819
+INFO 2025-04-16 18:53:40,831 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:53:41,425 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:53:41,516 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:53:42,611 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:53:43,422 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:53:43,495 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:58:57,523 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:58:57,701 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:58:57,747 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 18:58:59,726 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:58:59,822 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 18:58:59,849 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 19:13:39,099 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 19:19:39,438 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 19:19:44,769 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-16 19:19:44,828 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-16 19:19:46,774 basehttp "GET /api/schema/ HTTP/1.1" 200 184819
+INFO 2025-04-16 19:20:20,346 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 19:20:20,347 utils Using standard SMTP email
+ERROR 2025-04-16 19:20:22,898 utils Failed to send verification email via SMTP: [Errno 11001] getaddrinfo failed
+INFO 2025-04-16 19:20:22,899 utils Falling back to Liara API for email sending
+INFO 2025-04-16 19:20:23,005 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1122
+INFO 2025-04-16 19:41:37,428 autoreload C:\Users\Danial\Desktop\Sefr\api\models.py changed, reloading.
+INFO 2025-04-16 19:41:40,787 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 19:41:47,045 autoreload C:\Users\Danial\Desktop\Sefr\api\views_email_sample.py changed, reloading.
+INFO 2025-04-16 19:41:50,931 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 19:48:43,880 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 19:48:45,857 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:30:06,881 autoreload C:\Users\Danial\Desktop\Sefr\api\models.py changed, reloading.
+INFO 2025-04-16 20:30:14,613 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:32:37,068 autoreload C:\Users\Danial\Desktop\Sefr\api\schema.py changed, reloading.
+INFO 2025-04-16 20:32:41,491 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:33:25,723 autoreload C:\Users\Danial\Desktop\Sefr\api\views.py changed, reloading.
+INFO 2025-04-16 20:33:29,702 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:35:17,641 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 20:35:19,155 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:35:57,015 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 20:35:58,746 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:41:03,521 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 20:41:05,225 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:41:35,917 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 20:41:37,339 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:42:05,465 autoreload C:\Users\Danial\Desktop\Sefr\api\models.py changed, reloading.
+INFO 2025-04-16 20:42:06,997 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:42:20,539 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 20:42:21,968 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:43:22,965 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 20:43:22,965 utils Using standard SMTP email
+INFO 2025-04-16 20:43:30,862 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-16 20:43:30,910 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 20:48:28,268 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 20:48:29,916 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:49:11,443 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 20:49:11,443 utils Using standard SMTP email
+INFO 2025-04-16 20:49:16,237 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-16 20:49:16,273 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 20:52:14,324 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 20:52:16,282 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:53:01,775 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 20:53:01,776 utils Using standard SMTP email
+INFO 2025-04-16 20:53:04,064 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-16 20:53:04,126 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 20:55:49,721 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 20:55:51,462 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:56:09,466 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 20:56:10,865 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 20:57:51,607 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 20:57:51,608 utils Using standard SMTP email
+ERROR 2025-04-16 20:57:58,555 utils Failed to send verification email via SMTP: (450, b'ERR_NON_2XX_3XX_RESPONSE - The mail server domain (example.com) does not exist. Please check your mail server details or refer to the documentation: https://docs.liara.ir/email/create-mail-server - Failed to send mail')
+INFO 2025-04-16 20:57:58,556 utils Falling back to Liara API for email sending
+INFO 2025-04-16 20:57:58,592 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1122
+INFO 2025-04-16 21:00:38,847 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 21:00:40,512 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:00:56,129 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 21:00:57,652 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:01:31,151 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 21:01:31,152 utils Using standard SMTP email
+ERROR 2025-04-16 21:01:34,075 utils Failed to send verification email via SMTP: (450, b'ERR_NON_2XX_3XX_RESPONSE - The mail server domain (example.com) does not exist. Please check your mail server details or refer to the documentation: https://docs.liara.ir/email/create-mail-server - Failed to send mail')
+INFO 2025-04-16 21:01:34,076 utils Falling back to Liara API for email sending
+INFO 2025-04-16 21:01:34,105 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1122
+INFO 2025-04-16 21:03:14,173 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 21:03:15,531 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:04:00,287 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 21:04:01,518 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:04:12,227 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 21:04:13,522 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:04:34,701 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 21:04:35,939 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-16 21:05:49,344 log Bad Request: /api/auth/register/
+WARNING 2025-04-16 21:05:49,345 basehttp "POST /api/auth/register/ HTTP/1.1" 400 50
+INFO 2025-04-16 21:06:02,036 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 21:06:02,036 utils Using standard SMTP email
+ERROR 2025-04-16 21:06:05,732 utils Failed to send verification email via SMTP: (450, b'ERR_NON_2XX_3XX_RESPONSE - The mail server domain (example.com) does not exist. Please check your mail server details or refer to the documentation: https://docs.liara.ir/email/create-mail-server - Failed to send mail')
+INFO 2025-04-16 21:06:05,733 utils Falling back to Liara API for email sending
+INFO 2025-04-16 21:06:05,767 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1122
+INFO 2025-04-16 21:28:56,517 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-16 21:29:00,366 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:39:37,860 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-16 21:39:39,700 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:41:40,983 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-16 21:41:41,580 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 200 2849
+INFO 2025-04-16 21:41:41,583 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-16 21:41:42,869 basehttp "GET /api/schema/ HTTP/1.1" 200 185223
+INFO 2025-04-16 21:41:46,096 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-16 21:42:04,187 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 21:42:04,188 utils Using standard SMTP email
+INFO 2025-04-16 21:42:10,235 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-16 21:42:10,273 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 21:52:59,006 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 21:52:59,007 utils Using standard SMTP email
+INFO 2025-04-16 21:53:03,069 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-16 21:53:03,108 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-16 21:57:45,665 autoreload C:\Users\Danial\Desktop\Sefr\api\utils.py changed, reloading.
+INFO 2025-04-16 21:57:47,370 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 21:58:37,911 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-16 21:58:39,543 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 22:01:27,075 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-16 22:01:27,076 utils Using standard SMTP email
+INFO 2025-04-16 22:01:33,181 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-16 22:01:33,222 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-17 11:23:19,136 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 11:25:23,139 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-17 11:25:23,217 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-17 11:25:23,618 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 200 2849
+INFO 2025-04-17 11:25:23,624 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-17 11:25:23,962 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-17 11:25:30,683 basehttp "GET /api/schema/ HTTP/1.1" 200 185223
+INFO 2025-04-17 11:31:07,717 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-17 11:31:07,718 utils Using standard SMTP email
+INFO 2025-04-17 11:31:12,549 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-17 11:31:12,586 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-17 11:35:20,358 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-17 11:35:20,359 utils Using standard SMTP email
+INFO 2025-04-17 11:35:26,168 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-17 11:35:26,170 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+WARNING 2025-04-17 11:36:20,557 log Bad Request: /api/auth/verify-email/
+WARNING 2025-04-17 11:36:20,558 basehttp "POST /api/auth/verify-email/ HTTP/1.1" 400 95
+INFO 2025-04-17 11:37:53,227 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 11:37:55,030 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 11:45:52,239 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 11:45:53,122 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:02:42,960 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 12:02:45,420 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:07:49,972 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 12:07:52,831 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:12:29,015 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 12:12:30,325 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:12:38,972 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 12:12:40,060 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:13:02,114 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 12:13:04,603 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:14:10,673 autoreload C:\Users\Danial\Desktop\Sefr\api\verification_email.py changed, reloading.
+INFO 2025-04-17 12:14:11,736 autoreload Watching for file changes with StatReloader
+INFO 2025-04-17 12:17:12,916 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-17 12:17:12,977 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-17 12:17:15,132 basehttp "GET /api/schema/ HTTP/1.1" 200 185223
+WARNING 2025-04-26 19:25:38,608 log Method Not Allowed: /api/email/diagnostics/
+WARNING 2025-04-26 19:25:40,133 log Bad Request: /api/email/test-liara-api/
+WARNING 2025-04-26 19:25:41,977 log Bad Request: /api/system/email/test/
+WARNING 2025-04-26 19:25:43,517 log Bad Request: /api/email/test-smtp/
+WARNING 2025-04-26 19:25:48,760 log Forbidden: /api/auth/debug/get-code/
+INFO 2025-04-26 19:25:52,304 utils Attempting to send verification email to newuser@example.com
+INFO 2025-04-26 19:25:52,306 utils Using standard SMTP email
+INFO 2025-04-26 19:25:52,532 utils Verification email sent to newuser@example.com
+INFO 2025-04-26 19:25:54,243 utils Attempting to send verification email to test@example.com
+INFO 2025-04-26 19:25:54,245 utils Using standard SMTP email
+INFO 2025-04-26 19:25:54,248 utils Verification email sent to test@example.com
+WARNING 2025-04-26 19:25:57,434 log Bad Request: /api/auth/verify-email/
+WARNING 2025-04-26 19:32:27,579 log Method Not Allowed: /api/email/diagnostics/
+WARNING 2025-04-26 19:32:28,977 log Bad Request: /api/email/test-liara-api/
+WARNING 2025-04-26 19:32:30,209 log Bad Request: /api/system/email/test/
+WARNING 2025-04-26 19:32:31,320 log Bad Request: /api/email/test-smtp/
+WARNING 2025-04-26 19:32:35,550 log Forbidden: /api/auth/debug/get-code/
+INFO 2025-04-26 19:32:37,710 utils Attempting to send verification email to newuser@example.com
+INFO 2025-04-26 19:32:37,710 utils Using standard SMTP email
+INFO 2025-04-26 19:32:37,780 utils Verification email sent to newuser@example.com
+INFO 2025-04-26 19:32:38,779 utils Attempting to send verification email to test@example.com
+INFO 2025-04-26 19:32:38,779 utils Using standard SMTP email
+INFO 2025-04-26 19:32:38,779 utils Verification email sent to test@example.com
+WARNING 2025-04-26 19:32:41,019 log Bad Request: /api/auth/verify-email/
+INFO 2025-04-26 21:48:11,515 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 21:57:39,485 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:31:41,542 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-26 22:31:43,357 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:32:11,294 autoreload C:\Users\Danial\Desktop\Sefr\api\schema.py changed, reloading.
+INFO 2025-04-26 22:32:13,033 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:35:15,813 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-26 22:35:17,904 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:35:49,914 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-26 22:35:51,958 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:42:05,315 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-26 22:42:05,457 basehttp "GET /swagger/ HTTP/1.1" 200 4778
+INFO 2025-04-26 22:42:07,633 basehttp "GET /schema/ HTTP/1.1" 200 185561
+INFO 2025-04-26 22:47:29,204 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-26 22:47:31,128 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:48:09,660 autoreload C:\Users\Danial\Desktop\Sefr\api\schema.py changed, reloading.
+INFO 2025-04-26 22:48:11,358 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-26 22:49:05,602 log Not Found: /swagger/
+WARNING 2025-04-26 22:49:05,603 basehttp "GET /swagger/ HTTP/1.1" 404 3534
+WARNING 2025-04-26 22:49:21,843 log Not Found: /swagger/api/docs/
+WARNING 2025-04-26 22:49:21,847 basehttp "GET /swagger/api/docs/ HTTP/1.1" 404 3561
+WARNING 2025-04-26 22:49:27,865 log Not Found: /swagger/api/docs/
+WARNING 2025-04-26 22:49:27,866 basehttp "GET /swagger/api/docs/ HTTP/1.1" 404 3561
+INFO 2025-04-26 22:49:35,089 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-26 22:49:35,161 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-26 22:49:36,043 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-26 22:49:36,044 basehttp "GET /static/css/swagger-ui-animations.css HTTP/1.1" 200 2849
+INFO 2025-04-26 22:49:36,049 basehttp "GET /static/js/swagger-ui-effects.js HTTP/1.1" 200 9525
+INFO 2025-04-26 22:49:38,901 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-26 22:50:17,931 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-26 22:50:17,952 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-26 22:50:20,896 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-26 22:50:28,815 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-26 22:50:28,826 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-26 22:50:29,394 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+WARNING 2025-04-26 22:50:43,044 log Not Found: /api/redocs/
+WARNING 2025-04-26 22:50:43,045 basehttp "GET /api/redocs/ HTTP/1.1" 404 25649
+INFO 2025-04-26 22:53:19,118 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-26 22:53:21,299 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:54:22,604 autoreload C:\Users\Danial\Desktop\Sefr\api\schema.py changed, reloading.
+INFO 2025-04-26 22:54:23,931 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 22:55:13,620 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:01:57,349 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:02:09,621 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-26 23:02:09,738 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-26 23:02:14,541 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-27 11:01:29,458 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:02:38,110 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:09:07,848 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:09:11,464 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-27 11:09:11,565 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 11:09:16,025 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-27 11:10:54,479 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-27 11:10:55,382 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:12:20,435 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-27 11:12:21,436 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:13:15,749 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-27 11:13:16,668 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:13:25,722 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:14:11,705 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-27 11:14:11,834 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 11:14:14,422 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-27 11:14:18,388 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-04-27 11:14:18,399 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 11:14:19,108 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-27 11:17:24,746 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-27 11:17:25,790 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:17:39,766 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 11:17:47,373 basehttp "GET / HTTP/1.1" 200 14576
+INFO 2025-04-27 11:17:49,293 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-27 11:21:35,923 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\urls.py changed, reloading.
+INFO 2025-04-27 11:21:36,834 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-27 11:21:48,137 log Not Found: /
+WARNING 2025-04-27 11:21:48,141 basehttp "GET / HTTP/1.1" 404 3365
+WARNING 2025-04-27 11:21:50,148 log Not Found: /favicon.ico
+WARNING 2025-04-27 11:21:50,148 basehttp "GET /favicon.ico HTTP/1.1" 404 3542
+INFO 2025-04-27 11:21:59,693 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+WARNING 2025-04-27 11:22:01,054 log Not Found: /pi/docs/
+WARNING 2025-04-27 11:22:01,055 basehttp "GET /pi/docs/ HTTP/1.1" 404 3533
+INFO 2025-04-27 11:22:08,159 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 11:22:10,035 basehttp "GET /api/schema/ HTTP/1.1" 200 185561
+INFO 2025-04-27 11:22:18,122 basehttp "GET /api/redoc/ HTTP/1.1" 200 724
+INFO 2025-04-27 11:22:22,005 basehttp "GET /api/schema/ HTTP/1.1" 200 86008
+INFO 2025-04-27 12:14:22,951 utils Attempting to send verification email to danialebadi533@gamil.com
+INFO 2025-04-27 12:14:22,951 utils Using standard SMTP email
+INFO 2025-04-27 12:14:40,878 utils Verification email sent to danialebadi533@gamil.com
+INFO 2025-04-27 12:14:41,208 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-27 12:24:00,096 utils Attempting to send verification email to danialebadi533@gamil.com
+INFO 2025-04-27 12:24:00,096 utils Using standard SMTP email
+INFO 2025-04-27 12:24:23,879 utils Verification email sent to danialebadi533@gamil.com
+INFO 2025-04-27 12:24:23,884 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-27 12:26:32,741 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-27 12:26:34,041 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 12:28:12,878 autoreload C:\Users\Danial\Desktop\Sefr\Sefr\settings.py changed, reloading.
+INFO 2025-04-27 12:28:14,095 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-27 12:28:22,911 log Bad Request: /api/auth/register/
+WARNING 2025-04-27 12:28:22,912 basehttp "POST /api/auth/register/ HTTP/1.1" 400 50
+WARNING 2025-04-27 12:28:27,654 log Bad Request: /api/auth/register/
+WARNING 2025-04-27 12:28:27,654 basehttp "POST /api/auth/register/ HTTP/1.1" 400 50
+INFO 2025-04-27 12:28:40,986 utils Attempting to send verification email to danialebadi533@gamil.com
+INFO 2025-04-27 12:28:40,987 utils Using standard SMTP email
+INFO 2025-04-27 12:29:02,182 utils Verification email sent to danialebadi533@gamil.com
+INFO 2025-04-27 12:29:02,209 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-27 12:30:30,502 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-27 12:30:30,502 utils Using standard SMTP email
+INFO 2025-04-27 12:30:50,682 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-27 12:30:50,686 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-27 12:31:58,463 basehttp "POST /api/auth/verify-email/ HTTP/1.1" 200 841
+INFO 2025-04-27 21:16:20,709 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-27 21:16:24,763 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 21:17:52,406 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 21:17:53,474 basehttp "GET /api/schema/ HTTP/1.1" 200 182995
+INFO 2025-04-27 21:19:13,499 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-27 21:19:14,582 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 21:19:22,009 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 21:19:22,559 basehttp "GET /api/schema/ HTTP/1.1" 200 183055
+INFO 2025-04-27 21:21:00,311 autoreload C:\Users\Danial\Desktop\Sefr\api\urls.py changed, reloading.
+INFO 2025-04-27 21:21:01,241 autoreload Watching for file changes with StatReloader
+INFO 2025-04-27 21:21:20,216 basehttp "GET /api/docs/ HTTP/1.1" 200 14576
+INFO 2025-04-27 21:21:20,733 basehttp "GET /api/schema/ HTTP/1.1" 200 178180
+INFO 2025-04-27 21:30:35,711 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-27 21:30:35,711 utils Using standard SMTP email
+INFO 2025-04-27 21:30:39,402 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-27 21:30:39,432 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-27 21:42:27,138 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-27 21:42:27,138 utils Using standard SMTP email
+INFO 2025-04-27 21:42:30,322 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-27 21:42:30,325 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+INFO 2025-04-27 22:03:45,834 utils Attempting to send verification email to danialebadi533@gmail.com
+INFO 2025-04-27 22:03:45,834 utils Using standard SMTP email
+INFO 2025-04-27 22:03:48,575 utils Verification email sent to danialebadi533@gmail.com
+INFO 2025-04-27 22:03:48,579 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045

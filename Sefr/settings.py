@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-jq)$0=(e0u$@5c8#l3w=zod-(rlhf1a=vx9*wq9s!*y+q%6116
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'sefro.liara.run', '.liara.run']
 
 
 # Application definition
@@ -37,7 +39,114 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'drf_spectacular',
+    'drf_spectacular_sidecar',  # required for Django collectstatic discovery
+    'corsheaders',
+    'api',
 ]
+
+# Site ID for django.contrib.sites
+SITE_ID = 1
+
+# REST Framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+}
+
+from api.schema import SPECTACULAR_SETTINGS
+
+# DRF Spectacular settings
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Sefr API',
+    'DESCRIPTION': """
+    🚀 Modern RESTful API for Content Management
+    ==========================================
+
+    This API provides comprehensive endpoints for user management, content management, and system monitoring.
+    """,
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'SCHEMA_PATH_PREFIX': '/api/',
+    'SWAGGER_UI_SETTINGS': {
+        'deepLinking': True,
+        'persistAuthorization': True,
+        'displayOperationId': True,
+        'filter': True,
+        'displayRequestDuration': True,
+        'docExpansion': 'list',
+        'showExtensions': True
+    },
+    'SWAGGER_UI_FAVICON_HREF': 'https://fastapi.tiangolo.com/img/favicon.png',
+    'TAGS': [
+        {
+            'name': 'auth',
+            'description': """
+            🔐 Authentication & Authorization
+            ==============================
+            Endpoints for user registration, login, logout, and email verification.
+            """,
+        },
+        {
+            'name': 'users',
+            'description': """
+            👥 User Management
+            ================
+            Endpoints for managing user accounts, profiles, and user-related operations.
+            """
+        },
+        {
+            'name': 'roles',
+            'description': """
+            🎭 Role Management
+            ================
+            Endpoints for managing roles and role assignments.
+            """
+        },
+        {
+            'name': 'permissions',
+            'description': """
+            🔑 Permission Management
+            =====================
+            Endpoints for managing permissions and access control.
+            """
+        },
+        {
+            'name': 'articles',
+            'description': """
+            📝 Content Management
+            ==================
+            Endpoints for managing articles, categories, and related content.
+            """
+        },
+        {
+            'name': 'system',
+            'description': """
+            🏥 System Monitoring
+            =================
+            Endpoints for system health checks and monitoring.
+            """
+        }
+    ],
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization',
+            'description': 'Enter your JWT token in the format: `Bearer your.jwt.token`'
+        }
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,7 +163,7 @@ ROOT_URLCONF = 'Sefr.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,11 +184,17 @@ WSGI_APPLICATION = 'Sefr.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sefr',
+        'USER': 'postgres',
+        'PASSWORD': 'Danial2017!',
+        'HOST': 'localhost',
+        'PORT': '5432',  # Default PostgreSQL port
+        'OPTIONS': {
+            'client_encoding': 'UTF8',
+        },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -116,8 +231,86 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom user model
+AUTH_USER_MODEL = 'api.User'
+
+# Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('MAIL_HOST', default='smtp.c1.liara.email')
+EMAIL_PORT = config('MAIL_PORT', default=465, cast=int)
+EMAIL_HOST_USER = config('MAIL_USER', default='elastic_merkle_osq5l9')
+EMAIL_HOST_PASSWORD = config('MAIL_PASSWORD', default='90df8669-fe43-4361-bf8a-103e2a7a938b')
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = config('MAIL_FROM_ADDRESS', default='info@sefro.ir')
+MAIL_FROM = f"{config('MAIL_FROM_NAME', default='Sefr API')} <{config('MAIL_FROM_ADDRESS', default='info@sefro.ir')}>"
+
+# Liara Mail API settings
+MAIL_SERVICE_URL = 'https://mail-service.iran.liara.ir'
+MAIL_SERVER_ID = config('MAIL_USER', default='elastic_merkle_osq5l9')
+LIARA_API_TOKEN = config('MAIL_PASSWORD', default='90df8669-fe43-4361-bf8a-103e2a7a938b')
+
+# Enable email delivery in development
+EMAIL_DELIVERY_CHECK = True
+
+# Verification settings
+EMAIL_VERIFICATION_TIMEOUT = 3600  # 1 hour in seconds
+VERIFICATION_CODE_LENGTH = 6
+
+# Frontend URL for verification links
+FRONTEND_URL = 'https://sefr.app'
+
+# Logging Configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'debug.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'api': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}

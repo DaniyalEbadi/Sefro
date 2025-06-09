@@ -1,0 +1,75 @@
+/* Fix for operation IDs with line breaks */
+.opblock-summary-operation-id {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
+  display: inline-block !important;
+}
+
+/* Basic overrides for Swagger UI */
+.swagger-ui .info h2.title {
+    font-weight: bold;
+    color: #333;
+}
+
+.swagger-ui .scheme-container {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.swagger-ui .btn.execute {
+    background-color: #4caf50;
+}
+
+.swagger-ui .btn.execute:hover {
+    background-color: #45a049;
+}
+
+.swagger-ui .opblock-summary-method {
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Method colors */
+.swagger-ui .opblock-get .opblock-summary-method {
+    background-color: #61affe;
+}
+
+.swagger-ui .opblock-post .opblock-summary-method {
+    background-color: #49cc90;
+}
+
+.swagger-ui .opblock-put .opblock-summary-method {
+    background-color: #fca130;
+}
+
+.swagger-ui .opblock-delete .opblock-summary-method {
+    background-color: #f93e3e;
+}
+
+.swagger-ui .opblock-patch .opblock-summary-method {
+    background-color: #50e3c2;
+}
+
+/* Response styling */
+.swagger-ui table tbody tr td {
+    padding: 10px;
+}
+
+.swagger-ui .responses-table .response-col_status {
+    font-weight: bold;
+}
+
+/* Fix for mobile */
+@media (max-width: 768px) {
+    .swagger-ui .opblock .opblock-summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .swagger-ui .opblock .opblock-summary-method {
+        margin-bottom: 8px;
+    }
+} 

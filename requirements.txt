@@ -1,0 +1,25 @@
+# Core dependencies
+Django>=3.2,<4.0
+djangorestframework>=3.12.0,<4.0.0
+drf-spectacular>=0.21.0,<1.0.0
+djangorestframework-simplejwt>=5.2.2
+
+# Authentication
+django-cors-headers>=3.7.0,<4.0.0
+
+# Database
+psycopg2-binary>=2.9.1,<3.0.0
+
+# System monitoring
+psutil>=5.8.0,<6.0.0
+
+# Utils
+python-dateutil>=2.8.2,<3.0.0
+jdatetime>=4.0.0,<5.0.0  # For Shamsi date conversion
+
+# Deployment
+gunicorn>=20.1.0,<21.0.0
+whitenoise>=6.0.0,<7.0.0
+
+# Security
+django-environ>=0.8.0,<1.0.0 

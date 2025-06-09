@@ -113,7 +113,8 @@ class CommentTests(APITestCase):
         url = reverse('comment-list')
         data = {
             'article': self.article.id,
-            'content': 'Test Comment'
+            'content': 'Test Comment',
+            'author': self.user.id
         }
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -129,7 +130,8 @@ class CommentTests(APITestCase):
         data = {
             'article': self.article.id,
             'content': 'Child Comment',
-            'parent': parent_comment.id
+            'parent': parent_comment.id,
+            'author': self.user.id
         }
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)

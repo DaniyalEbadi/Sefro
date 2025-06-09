@@ -4,6 +4,7 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from django.contrib.auth import get_user_model
 from api.models import Role, Permission, RolePermission, UserRole
+from rest_framework_simplejwt.tokens import RefreshToken
 
 User = get_user_model()
 
@@ -129,4 +130,141 @@ class PermissionTests(APITestCase):
         }
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.assertTrue(RolePermission.objects.filter(role=role, permission=self.permission).exists()) 
+        self.assertTrue(RolePermission.objects.filter(role=role, permission=self.permission).exists())
+
+class AuthenticationTests(APITestCase):
+    def setUp(self):
+        # Create a test user
+        self.user_data = {
+            'username': 'testuser',
+            'email': 'test@example.com',
+            'password': 'testpass123',
+            'first_name': 'Test',
+            'last_name': 'User'
+        }
+        self.user = User.objects.create_user(**self.user_data)
+
+    def test_register_user(self):
+        """Test user registration"""
+        url = reverse('register')
+        data = {
+            'username': 'newuser',
+            'email': 'newuser@example.com',
+            'password': 'newpass123',
+            'first_name': 'New',
+            'last_name': 'User'
+        }
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertIn('refresh', response.data)
+        self.assertIn('access', response.data)
+        self.assertIn('user', response.data)
+        self.assertEqual(response.data['user']['username'], 'newuser')
+
+    def test_login_with_username(self):
+        """Test login with username"""
+        url = reverse('login')
+        data = {
+            'login': self.user_data['username'],
+            'password': self.user_data['password']
+        }
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn('refresh', response.data)
+        self.assertIn('access', response.data)
+        self.assertIn('user', response.data)
+        self.assertEqual(response.data['user']['username'], self.user_data['username'])
+
+    def test_login_with_email(self):
+        """Test login with email"""
+        url = reverse('login')
+        data = {
+            'login': self.user_data['email'],
+            'password': self.user_data['password']
+        }
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn('refresh', response.data)
+        self.assertIn('access', response.data)
+        self.assertEqual(response.data['user']['email'], self.user_data['email'])
+
+    def test_login_with_invalid_credentials(self):
+        """Test login with invalid credentials"""
+        url = reverse('login')
+        data = {
+            'login': self.user_data['username'],
+            'password': 'wrongpassword'
+        }
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+        self.assertIn('error', response.data)
+
+    def test_logout(self):
+        """Test user logout"""
+        # First login to get the refresh token
+        login_url = reverse('login')
+        login_data = {
+            'login': self.user_data['username'],
+            'password': self.user_data['password']
+        }
+        login_response = self.client.post(login_url, login_data, format='json')
+        self.assertEqual(login_response.status_code, status.HTTP_200_OK)
+        
+        # Then logout using the refresh token
+        logout_url = reverse('logout')
+        logout_data = {
+            'refresh': login_response.data['refresh']
+        }
+        self.client.credentials(HTTP_AUTHORIZATION=f"Bearer {login_response.data['access']}")
+        logout_response = self.client.post(logout_url, logout_data, format='json')
+        self.assertEqual(logout_response.status_code, status.HTTP_200_OK)
+        self.assertIn('message', logout_response.data)
+
+    def test_token_refresh(self):
+        """Test token refresh"""
+        # First login to get the refresh token
+        login_url = reverse('login')
+        login_data = {
+            'login': self.user_data['username'],
+            'password': self.user_data['password']
+        }
+        login_response = self.client.post(login_url, login_data, format='json')
+        self.assertEqual(login_response.status_code, status.HTTP_200_OK)
+        
+        # Then try to get a new access token
+        refresh_url = reverse('token_refresh')
+        refresh_data = {
+            'refresh': login_response.data['refresh']
+        }
+        refresh_response = self.client.post(refresh_url, refresh_data, format='json')
+        self.assertEqual(refresh_response.status_code, status.HTTP_200_OK)
+        self.assertIn('access', refresh_response.data)
+
+    def test_login_missing_fields(self):
+        """Test login with missing fields"""
+        url = reverse('login')
+        # Test without password
+        data = {'login': self.user_data['username']}
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        
+        # Test without login
+        data = {'password': self.user_data['password']}
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_register_duplicate_username(self):
+        """Test registration with duplicate username"""
+        url = reverse('register')
+        data = self.user_data.copy()
+        data['email'] = 'another@example.com'  # Different email but same username
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_register_duplicate_email(self):
+        """Test registration with duplicate email"""
+        url = reverse('register')
+        data = self.user_data.copy()
+        data['username'] = 'anotheruser'  # Different username but same email
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST) 

@@ -1,0 +1,9 @@
+{
+  "platform": "django",
+  "app": "sefro",
+  "django": {
+    "pythonVersion": "3.9",
+    "wsgiConfig": "Sefr.wsgi",
+    "collectStatic": true
+  }
+} 

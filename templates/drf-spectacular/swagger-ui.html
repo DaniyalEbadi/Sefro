@@ -1,0 +1,551 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% if title %}{{ title }}{% else %}Sefr API{% endif %}{% endblock %}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.9.0/swagger-ui.css">
+    <link rel="icon" type="image/png" href="https://fastapi.tiangolo.com/img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/swagger-ui-animations.css' %}">
+    <style>
+      html {
+        box-sizing: border-box;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        background: #121212;
+        color: #e0e0e0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      
+      /* Dark mode styling */
+      .swagger-ui {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .info .title,
+      .swagger-ui .info p,
+      .swagger-ui .info a,
+      .swagger-ui .scheme-container .schemes-title {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .scheme-container {
+        background-color: #1e1e1e;
+      }
+      
+      .swagger-ui select {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+        border-color: #444;
+      }
+      
+      .swagger-ui .opblock-tag {
+        color: #e0e0e0;
+        border-bottom: 1px solid #333;
+      }
+      
+      .swagger-ui .opblock {
+        background: #1e1e1e;
+        border-color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      .swagger-ui .opblock-summary-description,
+      .swagger-ui .opblock-summary-operation-id {
+        color: #ffffff;
+      }
+      
+      .swagger-ui .opblock-summary-path {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .opblock-section-header {
+        background-color: #2d2d2d;
+        border-color: #333;
+      }
+      
+      .swagger-ui .opblock .opblock-section-header h4,
+      .swagger-ui .opblock .opblock-section-header label {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .tab li {
+        color: #ccc;
+      }
+      
+      .swagger-ui input,
+      .swagger-ui textarea {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+        border-color: #444;
+      }
+      
+      .swagger-ui .table-container, .swagger-ui .model-box {
+        background-color: #2d2d2d;
+      }
+      
+      .swagger-ui .model {
+        color: #ccc;
+      }
+      
+      .swagger-ui section.models {
+        border-color: #333;
+      }
+      
+      .swagger-ui section.models h4 {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .model-title {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .model-container {
+        background-color: #2d2d2d;
+      }
+      
+      .swagger-ui .parameter__name, 
+      .swagger-ui .parameter__type, 
+      .swagger-ui .parameter__in {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .btn {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .servers-title,
+      .swagger-ui .servers > label {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .responses-inner h4,
+      .swagger-ui .responses-inner h5 {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .response-col_status {
+        color: #e0e0e0;
+      }
+      
+      .swagger-ui .response-col_description {
+        color: #ffffff;
+      }
+      
+      .swagger-ui .markdown code, 
+      .swagger-ui .renderedMarkdown code {
+        color: #50fa7b;
+        background-color: #282a36;
+      }
+      
+      .swagger-ui .topbar {
+        background: linear-gradient(135deg, #1a237e, #283593);
+      }
+      
+      .swagger-ui table tbody tr td {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+        border-color: #444;
+      }
+      
+      .swagger-ui table thead tr td, 
+      .swagger-ui table thead tr th {
+        background-color: #222;
+        color: #e0e0e0;
+        border-color: #444;
+      }
+      
+      /* Method colors (dark theme) */
+      .swagger-ui .opblock-get {
+        background-color: rgba(59, 130, 246, 0.2);
+        border-color: rgba(59, 130, 246, 0.5);
+      }
+      
+      .swagger-ui .opblock-post {
+        background-color: rgba(16, 185, 129, 0.2);
+        border-color: rgba(16, 185, 129, 0.5);
+      }
+      
+      .swagger-ui .opblock-put {
+        background-color: rgba(245, 158, 11, 0.2);
+        border-color: rgba(245, 158, 11, 0.5);
+      }
+      
+      .swagger-ui .opblock-delete {
+        background-color: rgba(239, 68, 68, 0.2);
+        border-color: rgba(239, 68, 68, 0.5);
+      }
+      
+      .swagger-ui .opblock-patch {
+        background-color: rgba(99, 102, 241, 0.2);
+        border-color: rgba(99, 102, 241, 0.5);
+      }
+      
+      /* Animation for page load */
+      .swagger-ui {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      
+      /* Endpoint hover effects */
+      .swagger-ui .opblock {
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      .swagger-ui .opblock:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      /* Method badges with improved styling */
+      .swagger-ui .opblock-summary-method {
+        transition: all 0.2s ease;
+      }
+      
+      .swagger-ui .opblock-summary-method:hover {
+        transform: scale(1.1);
+      }
+      
+      /* Animated expand/collapse */
+      .swagger-ui .opblock-summary {
+        transition: background-color 0.3s ease;
+      }
+      
+      .swagger-ui .opblock-summary:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      
+      /* Try it out button animation */
+      .swagger-ui .btn {
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .swagger-ui .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Animated response section */
+      .swagger-ui .responses-wrapper {
+        transition: opacity 0.3s ease;
+      }
+      
+      /* Custom animations */
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      /* Pulsating effect for important buttons */
+      .swagger-ui .execute {
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4); }
+        70% { box-shadow: 0 0 0 8px rgba(40, 167, 69, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
+      }
+      
+      /* Improved tag styling */
+      .swagger-ui .opblock-tag {
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      .swagger-ui .opblock-tag:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        transform: translateX(2px);
+      }
+      
+      /* Loading animation */
+      .swagger-ui .loading-container .loading {
+        animation: rotate 1s infinite linear;
+      }
+      
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Enhance visibility of Try it out buttons */
+      .swagger-ui .btn.try-out__btn {
+        background-color: #2196f3;
+        color: white;
+        border-color: #1976d2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+        padding: 8px 15px;
+      }
+      
+      .swagger-ui .btn.try-out__btn:hover {
+        background-color: #0d8bf2;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      }
+      
+      /* Make parameter section more visible */
+      .swagger-ui .parameters-container {
+        background-color: #1a1a1a;
+        border: 1px solid #444;
+        border-radius: 4px;
+        margin: 20px 0;
+        padding: 10px;
+      }
+      
+      .swagger-ui .parameters-container h4 {
+        color: #2196f3;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      
+      /* Add glow effect to execute button */
+      .swagger-ui .btn.execute {
+        background-color: #4caf50;
+        color: white;
+        border-color: #388e3c;
+        font-weight: bold;
+        padding: 8px 15px;
+        position: relative;
+      }
+      
+      .swagger-ui .btn.execute:hover {
+        background-color: #45a049;
+      }
+      
+      /* Make models section more visible */
+      .swagger-ui section.models {
+        background-color: #1a1a1a;
+        border: 1px solid #444;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      
+      .swagger-ui section.models h4 {
+        color: #e0e0e0;
+        font-weight: bold;
+      }
+      
+      /* Enhance responses section */
+      .swagger-ui .responses-wrapper {
+        background-color: #1a1a1a;
+        border: 1px solid #444;
+        border-radius: 4px;
+        margin-top: 20px;
+        padding: 10px;
+      }
+      
+      .swagger-ui .responses-inner h4,
+      .swagger-ui .responses-inner h5 {
+        color: #2196f3;
+      }
+      
+      /* Improve description visibility throughout the UI */
+      .swagger-ui .markdown p, 
+      .swagger-ui .markdown li,
+      .swagger-ui .renderedMarkdown p,
+      .swagger-ui .renderedMarkdown li {
+        color: #ffffff;
+      }
+      
+      .swagger-ui .parameter__name, 
+      .swagger-ui .parameter__type, 
+      .swagger-ui .parameter__in,
+      .swagger-ui .parameter__deprecated,
+      .swagger-ui table.parameters td.parameters-col_description,
+      .swagger-ui .opblock-description-wrapper p {
+        color: #ffffff;
+      }
+      
+      /* Improve section headers to make them more visible */
+      .swagger-ui .opblock-tag-section h3,
+      .swagger-ui .opblock .opblock-section-header h4,
+      .swagger-ui .parameters-col_name {
+        color: #ffffff;
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Make Parameters and Responses headers stand out */
+      .swagger-ui .opblock-section-header {
+        background-color: #2d2d2d;
+        padding: 12px;
+        border-radius: 4px;
+        border-left: 4px solid #2196f3;
+        margin-bottom: 15px;
+      }
+      
+      /* Make Parameters header explicitly visible */
+      .swagger-ui .opblock-section-header h4 {
+        font-size: 16px;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      /* Summary path highlight - make ALL summary text bright white */
+      .swagger-ui .opblock-summary-path,
+      .swagger-ui .opblock-summary-description,
+      .swagger-ui .opblock-summary-operation-id,
+      .swagger-ui .opblock-external-docs-wrapper,
+      .swagger-ui .opblock-title_normal,
+      .swagger-ui .opblock-description,
+      .swagger-ui .opblock-description-wrapper p,
+      .swagger-ui .opblock-external-docs-wrapper p,
+      .swagger-ui .opblock-title_normal p,
+      .swagger-ui .opblock-summary p {
+        color: #ffffff !important; /* Force white color */
+        font-weight: 500;
+        font-size: 14px;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+      }
+      
+      /* Further enhance summary container */
+      .swagger-ui .opblock-summary {
+        background-color: rgba(30, 30, 30, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 12px;
+      }
+      
+      /* Add a subtle glow effect to the summary to make it more visible */
+      .swagger-ui .opblock-summary-description {
+        position: relative;
+        display: inline-block;
+        padding: 5px 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        padding: 3px 6px;
+      }
+      
+      /* Make Responses table more visible */
+      .swagger-ui .responses-table {
+        background-color: #1e1e1e;
+        border: 1px solid #444;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      
+      .swagger-ui .response-col_status {
+        font-weight: bold;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #2a2a2a;
+      }
+      
+      /* Add neon effect to "Parameters" and "Responses" headers */
+      .swagger-ui .opblock-section-header h4,
+      .swagger-ui .responses-header h4 {
+        position: relative;
+        color: #ffffff;
+        display: inline-block;
+      }
+      
+      .swagger-ui .opblock-section-header h4::after,
+      .swagger-ui .responses-header h4::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #2196f3;
+        box-shadow: 0 0 5px #2196f3, 0 0 8px #2196f3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="https://unpkg.com/swagger-ui-dist@5.9.0/swagger-ui-bundle.js"></script>
+    <script src="https://unpkg.com/swagger-ui-dist@5.9.0/swagger-ui-standalone-preset.js"></script>
+    <script src="{% static 'js/swagger-ui-effects.js' %}"></script>
+    <script>
+    // Define configuration variables from Django first
+    {% if settings.display_operation_id %}
+      var displayOperationId = true;
+    {% else %}
+      var displayOperationId = false;
+    {% endif %}
+    
+    {% if settings.filter %}
+      var filterEnabled = true;
+    {% else %}
+      var filterEnabled = false;
+    {% endif %}
+    
+    {% if settings.persist_authorization %}
+      var persistAuth = true;
+    {% else %}
+      var persistAuth = false;
+    {% endif %}
+    
+    {% if settings.validator_url %}
+      var validatorUrl = "{{ settings.validator_url }}";
+    {% else %}
+      var validatorUrl = null;
+    {% endif %}
+    
+    {% if settings.oauth2_config %}
+      var oauth2RedirectUrl = "{{ request.build_absolute_uri }}oauth2-redirect";
+      var oauth2Config = {{ settings.oauth2_config|safe }};
+    {% endif %}
+    
+    window.onload = function() {
+      const ui = SwaggerUIBundle({
+        url: "{% url 'schema' %}",
+        dom_id: '#swagger-ui',
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        layout: "BaseLayout",
+        deepLinking: true,
+        showExtensions: true,
+        showCommonExtensions: true,
+        defaultModelsExpandDepth: 1,
+        defaultModelExpandDepth: 1,
+        displayOperationId: displayOperationId,
+        docExpansion: "list", 
+        filter: filterEnabled,
+        persistAuthorization: persistAuth,
+        validatorUrl: validatorUrl
+        {% if settings.oauth2_config %},
+        oauth2RedirectUrl: oauth2RedirectUrl
+        {% endif %}
+      });
+      
+      // Add animations when expanding operations
+      const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+          if (mutation.type === 'childList') {
+            const responseWrappers = document.querySelectorAll('.response-col_description');
+            responseWrappers.forEach(wrapper => {
+              wrapper.style.animation = 'fadeIn 0.4s ease-in-out';
+            });
+          }
+        });
+      });
+      
+      // Start observing changes in the UI
+      observer.observe(document.getElementById('swagger-ui'), {
+        childList: true,
+        subtree: true
+      });
+      
+      {% if settings.oauth2_config %}
+      ui.initOAuth(oauth2Config);
+      {% endif %}
+      window.ui = ui;
+    }
+    </script>
+  </body>
+</html>

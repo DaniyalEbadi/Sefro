@@ -1,0 +1,125 @@
+/* Additional Swagger UI Animations and Effects */
+
+/* Endpoint paths with shine effect */
+.swagger-ui .opblock .opblock-summary-path {
+  position: relative;
+  overflow: hidden;
+}
+
+.swagger-ui .opblock .opblock-summary-path:after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  opacity: 0;
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.swagger-ui .opblock:hover .opblock-summary-path:after {
+  opacity: 1;
+  transform: rotate(30deg) translate(50%, -100%);
+  transition: transform 1s;
+}
+
+/* Response code badges with animations */
+.swagger-ui .response-col_status {
+  transition: all 0.3s ease;
+}
+
+.swagger-ui .response-col_status:hover {
+  transform: scale(1.1);
+}
+
+/* Animated input fields */
+.swagger-ui input[type=text], 
+.swagger-ui textarea {
+  transition: all 0.3s ease-in-out;
+  border-left: 2px solid transparent;
+}
+
+.swagger-ui input[type=text]:focus, 
+.swagger-ui textarea:focus {
+  border-left: 2px solid #49cc90;
+  box-shadow: 0 0 0 2px rgba(73, 204, 144, 0.1);
+}
+
+/* Floating effect for parameter table rows */
+.swagger-ui .parameters-col_description {
+  transition: all 0.3s ease;
+}
+
+.swagger-ui table tbody tr:hover .parameters-col_description {
+  transform: translateX(5px);
+}
+
+/* Colorful HTTP method badges on hover */
+.swagger-ui .opblock-summary-method {
+  position: relative;
+  z-index: 1;
+}
+
+.swagger-ui .opblock-summary-method::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 3px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.swagger-ui .opblock-get .opblock-summary-method::before {
+  box-shadow: 0 0 15px 2px rgba(97, 175, 254, 0.7);
+}
+
+.swagger-ui .opblock-post .opblock-summary-method::before {
+  box-shadow: 0 0 15px 2px rgba(73, 204, 144, 0.7);
+}
+
+.swagger-ui .opblock-put .opblock-summary-method::before {
+  box-shadow: 0 0 15px 2px rgba(252, 161, 48, 0.7);
+}
+
+.swagger-ui .opblock-delete .opblock-summary-method::before {
+  box-shadow: 0 0 15px 2px rgba(249, 62, 62, 0.7);
+}
+
+.swagger-ui .opblock-patch .opblock-summary-method::before {
+  box-shadow: 0 0 15px 2px rgba(80, 227, 194, 0.7);
+}
+
+.swagger-ui .opblock-summary-method:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Dropdown animation */
+.swagger-ui select {
+  transition: all 0.3s ease;
+}
+
+.swagger-ui select:hover {
+  border-color: #41444e;
+}
+
+/* Tab animation */
+.swagger-ui .tab {
+  transition: all 0.3s ease;
+}
+
+.swagger-ui .tab:hover {
+  transform: translateY(-2px);
+} 
