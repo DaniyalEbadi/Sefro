@@ -100,16 +100,30 @@ class ArticleViewSerializer(serializers.ModelSerializer):
 
 class ArticleSerializer(serializers.ModelSerializer):
     author = UserSerializer(read_only=True)
-    category = CategorySerializer(read_only=True)
-    media_files = MediaSerializer(many=True, read_only=True)
+    # Category will be writable by ID, and represented nestedly by category_details
+    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())
+    category_details = CategorySerializer(source='category', read_only=True)
+    media_files = MediaSerializer(many=True, read_only=True, source='media') # Corrected source
     comments = CommentSerializer(many=True, read_only=True)
     likes_count = serializers.SerializerMethodField()
     views_count = serializers.SerializerMethodField()
 
     class Meta:
         model = Article
-        fields = '__all__'
-        read_only_fields = ('slug', 'view_count', 'created_at', 'updated_at', 'published_at')
+        # Ensure all desired fields are listed, especially if adding new ones like category_id implicitly
+        # fields = '__all__' might not behave as expected with explicit field definitions conflicting with model fields.
+        # All fields to be included in the serializer must be listed here if Meta.fields is a tuple.
+        fields = (
+            'id', 'author', 'category', 'category_details', 'title', 'slug', 'content',
+            'seo_title', 'seo_description', 'Main_image', 'status',
+            'media_files', 'comments', 'likes_count', 'views_count',
+            'view_count', 'created_at', 'updated_at', 'published_at'
+        )
+        read_only_fields = (
+            'slug', 'view_count', 'created_at', 'updated_at', 'published_at',
+            'author', 'category_details', 'media_files', 'comments'
+        )
+        # 'category' is now writable (accepts ID)
 
     def get_likes_count(self, obj):
         return obj.likes.count()
@@ -118,5 +132,7 @@ class ArticleSerializer(serializers.ModelSerializer):
         return obj.views.count()
 
     def create(self, validated_data):
+        # Author is set from context (already handled by the serializer if request is in context)
+        # Category is set via category_id field thanks to source='category'
         validated_data['author'] = self.context['request'].user
         return super().create(validated_data)
