@@ -694,3 +694,22 @@ INFO 2025-04-27 22:03:45,834 utils Attempting to send verification email to dani
 INFO 2025-04-27 22:03:45,834 utils Using standard SMTP email
 INFO 2025-04-27 22:03:48,575 utils Verification email sent to danialebadi533@gmail.com
 INFO 2025-04-27 22:03:48,579 basehttp "POST /api/auth/register/ HTTP/1.1" 201 1045
+WARNING 2025-06-09 11:49:02,000 log Bad Request: /api/auth/verify-email/
+WARNING 2025-06-09 11:49:02,221 log Unauthorized: /api/auth/token/refresh/
+INFO 2025-06-09 11:49:02,661 utils Attempting to send verification email to testregister@example.com
+INFO 2025-06-09 11:49:02,662 utils Using standard SMTP email
+INFO 2025-06-09 11:49:02,667 utils Verification email sent to testregister@example.com
+WARNING 2025-06-09 11:49:02,886 log Unauthorized: /api/auth/login/
+WARNING 2025-06-09 11:49:03,549 log Unauthorized: /api/auth/login/
+WARNING 2025-06-09 11:49:03,764 log Bad Request: /api/auth/register/
+WARNING 2025-06-09 11:49:03,768 log Bad Request: /api/auth/register/
+WARNING 2025-06-09 11:51:24,882 log Bad Request: /api/articles/
+WARNING 2025-06-09 11:51:24,888 log Bad Request: /api/articles/
+WARNING 2025-06-09 11:51:24,894 log Bad Request: /api/articles/
+WARNING 2025-06-09 11:51:24,897 log Unauthorized: /api/articles/
+WARNING 2025-06-09 11:51:24,928 log Not Found: /api/articles/non-existent-slug/
+WARNING 2025-06-09 11:51:24,932 log Unauthorized: /api/articles/delete-me-unauth/
+WARNING 2025-06-09 11:51:24,957 log Unauthorized: /api/articles/
+WARNING 2025-06-09 11:51:24,962 log Not Found: /api/articles/non-existent-slug/
+WARNING 2025-06-09 11:51:24,980 log Unauthorized: /api/articles/retrieve-me-unauth/
+WARNING 2025-06-09 11:51:25,034 log Unauthorized: /api/articles/unauth-update-test/
